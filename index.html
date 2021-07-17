@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Origin of Love And Other Tales of Degradation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/sri0pcc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="body-box">
+
+    <div class="top-box">
+      Origin of <span class="words">War</span> (El Paso Texas & Dayton Ohio<span class="mark">,</span> August 4<span class="mark">,</span> 2019)<span class="mark">,</span>
+      Origin of <span class="words">Milky Way</span> (US<span class="mark">, </span>Mexican border<span class="mark">,</span> TBD)<span class="mark">,</span>
+      Origin of <span class="words">Pearls</span> (Hadar Ethiopia<span class="mark">,</span> 3.2 million years ago – 1974)<span class="mark">,</span>
+      Origin of <span class="words">Wet</span> (Berlin Germany<span class="mark">,</span> 1980)<span class="mark">,</span>
+      Origin of <span class="words">Angels</span> (Angelus Novus<span class="mark">,</span> 1920)<span class="mark">,</span>
+      Origin of <span class="words">Green</span> (Los Angeles<span class="mark">,</span> 2014)<span class="mark">,</span>
+      Origin of <span class="words">Pussy</span> (Academia, 1968 to Now)
+      Origin of <span class="words">Rape</span> (No place)<span class="mark">,</span>
+      Origin of <span class="words">Buttons</span> (Paris France<span class="mark">,</span> March 7<span class="mark">,</span> 1967)
+      Origin of <span class="words">Free</span> (His Imagination)<span class="mark">,</span>
+      Origin of <span class="words">You</span> (Midnight)<span class="mark">,</span>
+      Origin of <span class="words">Care</span> (Church Hill Virginia<span class="mark">,</span> 2019)<span class="mark">,</span>
+      Origin of <span class="words">Waste</span> (The Pentagon<span class="mark">,</span> 9/11)<span class="mark">,</span>
+      Origin of <span class="words">Wants</span> (Election Day<span class="mark">,</span> 2016)<span class="mark">,</span>
+      Origin of <span class="words">Spiral</span> (Airbnb<span class="mark">,</span> Mexico City<span class="mark">,</span> 2020)<span class="mark">,</span>
+      Origin of <span class="words">Prey</span> (Lansing Michigan<span class="mark">,</span> 2018)<span class="mark">,</span>
+      Origin of <span class="words">Money</span> (La Quinta Suites<span class="mark">,</span> 2001)<span class="mark">,</span>
+      Origin of <span class="words">Love</span> (first day on the job)<span class="mark">,</span>
+      Origin of <span class="words">Revenge</span> (US Immigration Center<span class="mark">,</span> future compacted)<span class="mark">,</span>
+      Origin of <span class="words">Doubt</span> (Every minute of Every day)<span class="mark">,</span>
+      Origin of <span class="words">Song</span> (No Touch Love)<span class="mark">,</span>
+      Postscript (topping from lockdown)<span class="mark">.</span>
+
+      <!-- one -->
+      <!-- &nbsp;<span id="fold-1">
+        <span id="fold_p-1">Info</span>
+      </span> -->
+
+      <!-- two -->
+      &nbsp;<span class="toggle" id="a" onclick="view('a1');"><u>Info</u></span>
+      <span id="a1" class="descriptions"><i>Origin of Love And Other Tales of Degradation</i><span class="mark">,</span> a book written by Cara Benedetto<span class="mark">,</span> designed by nicole killian<span class="mark">,</span> and published
+        by nico fontana<span class="mark">.</span> Learn more at <a href="https://nicofontana.cargo.site/" target="_blank">nico fontana</a> <span class="mark">.</span> </span>
+
+
+    </div>
+
+    <div class="bottom-box">
+
+      <div id="slideshow">
+        <div>
+          <img src="img/1-1.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/2-2.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/3-3.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/4-4.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/5-5.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/6-6.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/7-7.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/8-8.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/2-2.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/9-9.jpg" width="100%">
+        </div>
+
+        <div>
+          <img src="img/10-10.jpg" width="100%">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="info">
+
+      Info<span id="fold-1">
+        <span id="fold_p-1">Info</span>
+      </span>
+    </div>
+
+  </div> -->
+
+    <script>
+      $("#slideshow > div:gt(0)").hide();
+
+      setInterval(function() {
+        $('#slideshow > div:first')
+          .fadeOut(800)
+          .next()
+          .fadeIn(800)
+          .end()
+          .appendTo('#slideshow');
+      }, 3000);
+
+      $(document).ready(function() {
+        $("#fold-1").click(function() {
+          $("#fold_p-1").fadeOut(function() {
+            $("#fold_p-1").text(($("#fold_p-1").text() == 'Info') ? 'Origin of Love And Other Tales of Degradation, a book written by Cara Benedetto, designed by nicole killian, published by nicole ' : 'Info').fadeIn();
+          })
+        })
+      });
+
+      function view(id) { //this reads the div id variable passed in with each 'onclick' trigger
+        var x = document.getElementsByClassName("descriptions"); //this will find all your descriptions MUST HAVE "description" class
+        var i;
+        for (i = 0; i < x.length; i++) {
+          if (x[i].id !== id)
+            x[i].style.opacity = 0; //this will turn off all your descriptions except current one
+        }
+        var e = document.getElementById(id); //this will toggle on/off your active description
+        if (e.style.opacity == 0)
+          e.style.opacity = 1;
+        else
+          e.style.opacity = 0;
+      }
+    </script>
+
+
+
+    <!-- <div class="bottom">
+    Info
+  </div> -->
+
+</body>
