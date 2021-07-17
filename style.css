@@ -21,7 +21,7 @@ body {
 
 .top-box {
   /* width: 100%; */
-  position: fixed;
+  position: absolute;
   /* -webkit-text-stroke: 1px #C1BDE5; */
   color:#C1BDE5;
   user-select: none;
